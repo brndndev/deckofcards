@@ -20,3 +20,7 @@ for(let suitCounter = 0; suitCounter< 4; suitCounter++) {
 console.log(suits[suitCounter]);
 
 }
+
+for(let rankCounter = 0; rankCounter <= ranks.length; rankCounter++) {
+    console.log(ranks[rankCounter])
+}
