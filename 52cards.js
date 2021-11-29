@@ -11,16 +11,23 @@ for(let suitCounter = 0; suitCounter< 4; suitCounter++) {
 }
 ---        🃏  this is my test to make sure my variable met the conditions of <4 and added 1
 */
+let deck = [];
 
 for(let suitCounter = 0; suitCounter< 4; suitCounter++) {
     suits[0] //♥️
     suits[1] //♣️
     suits[2] //♦️
     suits[3] //♠️
-console.log(suits[suitCounter]);
+    for(let rankCounter = 0; rankCounter < ranks.length; rankCounter++){
+        // console.log(ranks[rankCounter] + suits[suitCounter]);
+            deck.push(ranks[rankCounter] + suits[suitCounter]);
+        }
+    }
 
-}
 
-for(let rankCounter = 0; rankCounter <= ranks.length; rankCounter++) {
-    console.log(ranks[rankCounter])
-}
+console.log(deck);
+
+// for(let rankCounter = 0; rankCounter <= ranks.length; rankCounter++) {
+//     console.log(ranks[rankCounter])
+// }
+
